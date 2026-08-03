@@ -4,3 +4,4 @@ __pycache__/
 *.py[cod]
 .ipynb_checkpoints/
 .vscode/
+**/get_available_models.py
