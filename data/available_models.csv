@@ -1,0 +1,75 @@
+model,status,http,message
+alibaba-qwen3-32b,✅ Accessible,200,
+all-mini-lm-l6-v2,⚠️ Failed,404,model not found
+anthropic-claude-4.1-opus,❌ Forbidden,403,this model is not available for your subscription tier
+anthropic-claude-4.5-sonnet,❌ Forbidden,403,this model is not available for your subscription tier
+anthropic-claude-4.6-sonnet,❌ Forbidden,403,this model is not available for your subscription tier
+anthropic-claude-5-sonnet,❌ Forbidden,403,this model is not available for your subscription tier
+anthropic-claude-fable-5,❌ Forbidden,403,this model is not available for your subscription tier
+anthropic-claude-haiku-4.5,❌ Forbidden,403,this model is not available for your subscription tier
+anthropic-claude-opus-4.5,❌ Forbidden,403,this model is not available for your subscription tier
+anthropic-claude-opus-4.6,❌ Forbidden,403,this model is not available for your subscription tier
+anthropic-claude-opus-4.7,❌ Forbidden,403,this model is not available for your subscription tier
+anthropic-claude-opus-4.8,❌ Forbidden,403,this model is not available for your subscription tier
+anthropic-claude-opus-5,❌ Forbidden,403,this model is not available for your subscription tier
+arcee-trinity-large-thinking,❌ Forbidden,403,this model is not available for your subscription tier
+bge-m3,⚠️ Failed,404,model not found
+bge-reranker-v2-m3,⚠️ Failed,404,model not found
+deepseek-3.2,✅ Accessible,200,
+deepseek-4-flash,✅ Accessible,200,
+deepseek-r1-distill-llama-70b,✅ Accessible,200,
+deepseek-v4-pro,✅ Accessible,200,
+e5-large-v2,⚠️ Failed,404,model not found
+gemma-4-31B-it,✅ Accessible,200,
+glm-5,✅ Accessible,200,
+glm-5.1,✅ Accessible,200,
+glm-5.2,✅ Accessible,200,
+gte-large-en-v1.5,⚠️ Failed,404,model not found
+kimi-k2.5,✅ Accessible,200,
+kimi-k2.6,✅ Accessible,200,
+kimi-k3,✅ Accessible,200,
+llama-4-maverick,✅ Accessible,200,
+llama3.3-70b-instruct,✅ Accessible,200,
+mimo-v2.5-pro,✅ Accessible,200,
+minimax-m2.5,✅ Accessible,200,
+mistral-3-14B,✅ Accessible,200,
+multi-qa-mpnet-base-dot-v1,⚠️ Failed,404,model not found
+nemotron-3-nano-omni,✅ Accessible,200,
+nemotron-3-ultra-550b,✅ Accessible,200,
+nemotron-nano-12b-v2-vl,✅ Accessible,200,
+nvidia-nemotron-3-super-120b,✅ Accessible,200,
+openai-gpt-4.1,❌ Forbidden,403,this model is not available for your subscription tier
+openai-gpt-4o,❌ Forbidden,403,this model is not available for your subscription tier
+openai-gpt-4o-mini,❌ Forbidden,403,this model is not available for your subscription tier
+openai-gpt-5,❌ Forbidden,403,this model is not available for your subscription tier
+openai-gpt-5-mini,❌ Forbidden,403,this model is not available for your subscription tier
+openai-gpt-5-nano,❌ Forbidden,403,this model is not available for your subscription tier
+openai-gpt-5.2,❌ Forbidden,403,this model is not available for your subscription tier
+openai-gpt-5.2-pro,❌ Forbidden,403,this model is not available for your subscription tier
+openai-gpt-5.3-codex,❌ Forbidden,403,this model is not available for your subscription tier
+openai-gpt-5.4,❌ Forbidden,403,this model is not available for your subscription tier
+openai-gpt-5.4-mini,❌ Forbidden,403,this model is not available for your subscription tier
+openai-gpt-5.4-nano,❌ Forbidden,403,this model is not available for your subscription tier
+openai-gpt-5.4-pro,❌ Forbidden,403,this model is not available for your subscription tier
+openai-gpt-5.5,❌ Forbidden,403,this model is not available for your subscription tier
+openai-gpt-5.6-luna,❌ Forbidden,403,this model is not available for your subscription tier
+openai-gpt-5.6-sol,❌ Forbidden,403,this model is not available for your subscription tier
+openai-gpt-5.6-terra,❌ Forbidden,403,this model is not available for your subscription tier
+openai-gpt-image-1,⚠️ Failed,404,model not found
+openai-gpt-image-1.5,⚠️ Failed,404,model not found
+openai-gpt-image-2,⚠️ Failed,404,model not found
+openai-gpt-oss-120b,✅ Accessible,200,
+openai-gpt-oss-20b,✅ Accessible,200,
+openai-o1,❌ Forbidden,403,this model is not available for your subscription tier
+openai-o3,❌ Forbidden,403,this model is not available for your subscription tier
+openai-o3-mini,❌ Forbidden,403,this model is not available for your subscription tier
+qwen3-coder-flash,✅ Accessible,200,
+qwen3-embedding-0.6b,⚠️ Failed,404,model not found
+qwen3-tts-voicedesign,⚠️ Failed,404,model not found
+qwen3.5-397b-a17b,✅ Accessible,200,
+router:general,✅ Accessible,200,
+router:knowledge-base-document,✅ Accessible,200,
+router:software-engineering,✅ Accessible,200,
+router:writing,✅ Accessible,200,
+stable-diffusion-3.5-large,⚠️ Failed,404,model not found
+wan2-2-t2v-a14b,⚠️ Failed,404,model not found

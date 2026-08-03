@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>doctl Issue Triage</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="/web/styles.css?v=5" />
+	</head>
+	<body>
+		<div class="bg-orb orb-a"></div>
+		<div class="bg-orb orb-b"></div>
+
+		<main class="container">
+			<header class="hero">
+				<h1>DigitalOcean doctl Issue Triage</h1>
+                <h4>Model Cost/Accuracy Comparison</h4>
+				<p>
+					Compares two LLMs on classifying real GitHub issues - digitalocean/doctl into 6
+					categories (bug, enhancement, question, documentation, security, other).
+				</p>
+			</header>
+
+			<section class="panel control-panel">
+				<div class="field-grid">
+					<label>
+						<span>Model A</span>
+						<select id="modelA"></select>
+					</label>
+					<label>
+						<span>Model B</span>
+						<select id="modelB"></select>
+					</label>
+					<button id="runBtn" class="btn-primary">Run comparison</button>
+				</div>
+				<div id="requestStatus" class="status" role="status"></div>
+			</section>
+
+			<section class="panel tabs">
+				<div class="tab-row">
+					<button class="tab-btn active" data-tab="scored">Scored View</button>
+					<button class="tab-btn" data-tab="unscored">Unscored View</button>
+					<button class="tab-btn" data-tab="operational">Operational Metrics</button>
+				</div>
+
+				<div id="tab-scored" class="tab-content active">
+					<h2>Scored results</h2>
+					<div id="scoredContent" class="status">Waiting for backend response.</div>
+				</div>
+
+				<div id="tab-unscored" class="tab-content">
+					<h2>Unscored results</h2>
+					<div id="unscoredContent" class="status">Waiting for backend response.</div>
+				</div>
+
+				<div id="tab-operational" class="tab-content">
+					<h2>Operational metrics</h2>
+					<div id="operationalContent" class="status">Waiting for backend response.</div>
+				</div>
+			</section>
+
+		</main>
+
+		<script src="/web/app.js?v=8"></script>
+	</body>
+</html>

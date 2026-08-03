@@ -1,0 +1,5 @@
+fastapi==0.116.1
+uvicorn[standard]==0.35.0
+gradientai==1.13.1
+gradient
+python-dotenv==1.1.1
