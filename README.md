@@ -170,7 +170,6 @@ Llama is the quality-first option when the additional 1.2 accuracy points justif
 - **gemma-4-31B-it:** Most errors were concentrated in `bug` and `enhancement`. It classified 3 of 48 enhancements as bugs, and 2 of 82 bugs as documentation. Its perfect recall on the smallest classes should not be treated as conclusive.
 - **llama3.3-70b-instruct:** It made fewer errors overall, but classified 1 of 3 `other` issues as `enhancement` and 1 of 7 questions as `bug`. Its strongest advantage over Gemma was enhancement recall.
 - **Low-support classes:** Findings for `security` and `other` are directional rather than conclusive due to their small sample sizes.
-- **[Add qualitative examples]:** [Issue ID/title, expected label, predicted label, and why the model likely failed.]
 
 ## Operational Metrics
 
