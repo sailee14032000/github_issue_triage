@@ -2,7 +2,7 @@
 
 > **Live application:** [https://digital-ocean-assignment.onrender.com/]
 >
-
+![alt text](docs/images/image-4.png)
 ## Recommendation
 
 Use **gemma-4-31B-it** as the production default, with **llama3.3-70b-instruct** as a quality-first fallback for uncertain cases, particularly likely `bug` and `enhancement` issues. Gemma achieved **95.0% accuracy** at **70.0% lower cost per correct classification** than Llama, while remaining within **1.2 percentage points** of Llama's 96.2% accuracy.
@@ -106,7 +106,7 @@ The application exposes the following 24 models for comparison. Availability mea
 
 ### Screening Results
 
-![alt text](image-3.png)
+![alt text](docs/images/image-3.png)
 
 ## Recommended Models
 
@@ -163,7 +163,7 @@ Llama is the quality-first option when the additional 1.2 accuracy points justif
 
 ### Confusion Matrices
 
-![alt text](image-1.png)
+![alt text](docs/images/image-1.png)
 
 ### Failure Analysis
 
@@ -195,7 +195,7 @@ All latency and error metrics are calculated separately for each model. The defa
 **Configured concurrency:** 10 in-flight calls
 
 Ten concurrent calls provide a balance between wall-clock time and API stability. Lower concurrency increases total runtime, while higher concurrency may improve throughput only until provider rate limits, timeouts, or local connection pressure begin to increase. 
-![alt text](image-2.png)
+![alt text](docs/images/image-2.png)
 
 
 ## Reproduction
