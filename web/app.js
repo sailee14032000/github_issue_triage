@@ -112,7 +112,7 @@ function renderConfusionMatrix(modelName, matrix) {
 	</article>`;
 }
 
-function renderIssueRows(rows, includeGroundTruth) {
+function renderIssueRows(rows, includeGroundTruth, modelAName, modelBName) {
 	if (!rows.length) return `<div class="empty-state">No issues match this view.</div>`;
 
 	return rows.map((row, index) => {
@@ -126,8 +126,8 @@ function renderIssueRows(rows, includeGroundTruth) {
 		<tr id="${detailId}" class="detail-row" hidden><td colspan="${includeGroundTruth ? 4 : 3}">
 			<div class="issue-detail">
 				<section><h4>Issue text</h4><p>${escapeHtml(row.body) || "No issue body."}</p></section>
-				<section><h4>Model A raw output</h4><pre>${escapeHtml(row.model_a_raw_output) || "No raw output."}</pre></section>
-				<section><h4>Model B raw output</h4><pre>${escapeHtml(row.model_b_raw_output) || "No raw output."}</pre></section>
+				<section><h4>${escapeHtml(modelAName)} raw output</h4><pre>${escapeHtml(row.model_a_raw_output) || "No raw output."}</pre></section>
+				<section><h4>${escapeHtml(modelBName)} raw output</h4><pre>${escapeHtml(row.model_b_raw_output) || "No raw output."}</pre></section>
 			</div>
 		</td></tr>`;
 	}).join("");
@@ -175,8 +175,8 @@ function renderScored(payload) {
 		</div>
 		<div class="section-heading"><h3>Model disagreements</h3><span>${scored.disagreements.length} issues</span></div>
 		<div class="table-scroll"><table>
-			<thead><tr><th>Issue</th><th>Model A</th><th>Model B</th><th>Ground truth</th></tr></thead>
-			<tbody>${renderIssueRows(scored.disagreements, true)}</tbody>
+			<thead><tr><th>Issue</th><th>${escapeHtml(payload.request.model_a)}</th><th>${escapeHtml(payload.request.model_b)}</th><th>Ground truth</th></tr></thead>
+			<tbody>${renderIssueRows(scored.disagreements, true, payload.request.model_a, payload.request.model_b)}</tbody>
 		</table></div>`;
 	setupExpandableRows(container);
 }
@@ -211,14 +211,14 @@ function renderUnscored(payload) {
 		</div>
 		<div class="table-scroll"><table>
 			<thead><tr><th>Issue</th><th>${escapeHtml(payload.request.model_a)}</th><th>${escapeHtml(payload.request.model_b)}</th></tr></thead>
-			<tbody id="unscoredRows">${renderIssueRows(unscored.rows, false)}</tbody>
+			<tbody id="unscoredRows">${renderIssueRows(unscored.rows, false, payload.request.model_a, payload.request.model_b)}</tbody>
 		</table></div>`;
 
 	const rowsContainer = document.getElementById("unscoredRows");
 	setupExpandableRows(container);
 	document.getElementById("disagreementOnly").addEventListener("change", (event) => {
 		const rows = event.target.checked ? unscored.disagreements : unscored.rows;
-		rowsContainer.innerHTML = renderIssueRows(rows, false);
+		rowsContainer.innerHTML = renderIssueRows(rows, false, payload.request.model_a, payload.request.model_b);
 		setupExpandableRows(rowsContainer);
 	});
 }
