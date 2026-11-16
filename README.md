@@ -3,13 +3,15 @@
 > **Live application:** [https://digital-ocean-assignment.onrender.com/]
 >
 ![alt text](docs/images/image-4.png)
-## Recommendation
-
-Use **gemma-4-31B-it** as the production default, with **llama3.3-70b-instruct** as a quality-first fallback for uncertain cases, particularly likely `bug` and `enhancement` issues. Gemma achieved **95.0% accuracy** at **70.0% lower cost per correct classification** than Llama, while remaining within **1.2 percentage points** of Llama's 96.2% accuracy.
 
 ## Scenario
 
 The customer currently uses expensive frontier models to classify incoming product issues. This project uses issues from `digitalocean/doctl` as a representative proving ground to determine whether smaller, less expensive models can preserve useful classification quality. The goal is not merely to identify the highest-scoring model on one repository, but to produce a cost-aware recommendation and evaluation approach that can extend to a broader multi-repository support workload.
+
+## Recommendation
+
+Use **gemma-4-31B-it** as the production default, with **llama3.3-70b-instruct** as a quality-first fallback for uncertain cases, particularly likely `bug` and `enhancement` issues. Gemma achieved **95.0% accuracy** at **70.0% lower cost per correct classification** than Llama, while remaining within **1.2 percentage points** of Llama's 96.2% accuracy.
+
 
 ## Ground Truth Methodology
 
