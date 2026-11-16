@@ -1,7 +1,5 @@
 # Cost-Effective LLM Selection for doctel GitHub Issue Triage
 
-> **Live application:** [https://digital-ocean-assignment.onrender.com/]
->
 ![alt text](docs/images/image-4.png)
 
 ## Scenario
